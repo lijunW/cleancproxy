@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[应用名称] 技术支持</title>
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --gray-700: #374151;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 
+                       "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+                       sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background: #f8fafc;
+        }
+        .support-container {
+            max-width: 680px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .support-heading {
+            color: var(--gray-700);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 40px;
+        }
+        .support-heading::before {
+            content: "🛠️";
+            position: absolute;
+            left: 0;
+            top: -0.2em;
+            font-size: 1.8rem;
+        }
+        .contact-methods {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f1f5f9;
+            transition: transform 0.2s;
+        }
+        .contact-card:hover {
+            transform: translateY(-2px);
+        }
+        .contact-icon {
+            font-size: 1.8rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-details {
+            flex-grow: 1;
+        }
+        .contact-label {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+        .contact-info {
+            color: var(--primary-blue);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .contact-info:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 640px) {
+            .support-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            
+            .support-heading {
+                font-size: 1.5rem;
+                padding-left: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="support-container">
+        <h1 class="support-heading">需要帮助？联系我们</h1>
+        
+        <p>我们的技术支持团队平均响应时间为<strong>2小时</strong>，全年无休为您提供以下服务：</p>
+        
+        <div class="contact-methods">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                    <div class="contact-label">建议发送至：</div>
+                    <a href="mailto:support@example.com" class="contact-info">
+                        support@example.com
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div class="contact-details">
+                    <div class="contact-label">紧急问题请致电：</div>
+                    <a href="tel:+861234567890" class="contact-info">
+                        +86 123 4567 8900
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: #64748b; font-size: 0.9rem;">
+            ⏰ 服务时间：周一至周日 8:00 - 22:00 (GMT+8)
+        </p>
+    </div>
+</body>
+</html>
