@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCleanBox - 奇玩清宝盒</title>
+    <style>
+        :root {
+            --primary: #2B90D9;
+            --secondary: #6C5CE7;
+            --accent: #00B894;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui;
+            line-height: 1.6;
+            margin: 0;
+            background: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .feature-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .badge {
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+        .cta-button {
+            background: var(--accent);
+            color: white!important;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 首屏展示 -->
+    <section class="hero">
+        <h1>奇玩清宝盒(QCleanBox)</h1>
+        <p>您的全能手机管家，完全免费！</p>
+        <a href="#download" class="cta-button">
+            <i class="fas fa-download"></i> 立即下载
+        </a>
+    </section>
+    <!-- 核心功能展示 -->
+    <section class="feature-grid">
+        <div class="feature-card">
+            <h3>📸 智能照片清理</h3>
+            <ul>
+                <li>截屏文件自动识别</li>
+                <li>重复照片精准比对</li>
+                <li>模糊图片智能筛选</li>
+                <li>GIF/Live Photo专项清理</li>
+                <li>大文件智能分类</li>
+            </ul>
+            <span class="badge">节省存储空间</span>
+        </div>
+        <div class="feature-card">
+            <h3>🛡️ 安全管家套件</h3>
+            <div class="feature-group">
+                <h4>拦截管家</h4>
+                <ul>
+                    <li>智能号码识别</li>
+                    <li>垃圾短信过滤</li>
+                    <li>骚扰电话记录</li>
+                </ul>
+            </div>
+            <div class="feature-group">
+                <h4>电池管家</h4>
+                <ul>
+                    <li>个性充电动画</li>
+                    <li>充电提示音定制</li>
+                    <li>电池健康报告</li>
+                </ul>
+            </div>
+        </div>
+        <div class="feature-card">
+            <h3>🧰 实用工具箱</h3>
+            <ul>
+                <li>实时网速测试仪</li>
+                <li>智能通讯录整理</li>
+                <li>日历事项管理</li>
+                <li>环境噪声检测</li>
+                <li>桌面小部件套件</li>
+            </ul>
+            <span class="badge">效率提升30%</span>
+        </div>
+        <div class="feature-card">
+            <h3>🔒 私密空间</h3>
+            <ul>
+                <li>军事级加密存储</li>
+                <li>隐私照片保险箱</li>
+                <li>私密视频保险库</li>
+                <li>安全书签管理</li>
+            </ul>
+            <span class="badge">银行级安全</span>
+        </div>
+    </section>
+    <!-- 功能亮点 -->
+    <section style="text-align: center; padding: 3rem;">
+        <h2>为什么选择CleanMaster？</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p>✔️ 完全免费无广告<br>
+            ✔️ 已通过官方安全认证<br>
+            ✔️ 平均每周为用户节省3.2GB空间<br>
+            ✔️ 隐私数据本地处理不上传</p>
+        </div>
+    </section>
+    <!-- 下载引导 -->
+    <section id="download" style="background: var(--primary); color: white; text-align: center; padding: 3rem;">
+        <h2>立即体验高效手机管理</h2>
+        <a href="#" class="cta-button">
+            <i class="fab fa-apple"></i> App Store 免费下载
+        </a>
+        <p style="margin-top: 1rem;">支持 iOS 13.0 及以上系统</p>
+    </section>
+</body>
+</html>
